@@ -12,21 +12,22 @@
 <body>
 <div class="jumbotron">
   <header class="container">
-     <h1 class="title">Weather app</h1>
+     <h1 class="title">Weather app
+     </h1>
+     <h3 class="title">Please enter city name to get current weather</h3>
   </header>
 </div>
 
 <div class="container">
   <form class="form-inline">
     <div class="form-group mx-sm-4 mb-2">
-   <label for="inputPassword2" class="sr-only">Town zipp code: </label>
-   <input type="password" class="form-control" id="inputPassword2" placeholder="zipp code">
+   <input class="form-control" id="inputPassword2" placeholder="city name">
  </div>
- <button type="submit" class="btn btn-primary mb-2">Confirm</button>
+ <button type="submit" class="btn btn-primary mb-2">Get</button>
   </form>
 </div>
 
-
-<script src="js/main.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js" charset="utf-8"></script>
 </body>
 </html>
