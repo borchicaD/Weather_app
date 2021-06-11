@@ -10,24 +10,30 @@
   <link rel="shortcut icon" type="image/png" href="favicons/my-favicon.png"/>
 </head>
 <body>
-<div class="jumbotron">
-  <header class="container">
-     <h1 class="title">Weather app
-     </h1>
-     <h3 class="title">Please enter city name to get current weather</h3>
-  </header>
-</div>
-
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <h2 class="title">Get current weather</h2>
+    </div>
+  </nav>
+  <br>
 <div class="container">
-  <form class="form-inline">
-    <div class="form-group mx-sm-4 mb-2">
-   <input class="form-control" id="inputPassword2" placeholder="city name">
- </div>
- <button type="submit" class="btn btn-primary mb-2">Get</button>
-  </form>
+  <div class="row">
+   <div class="col-lg-6 col-lg-offset-3">
+      <input type="text" class="form-control" placeholder="city name">
+      <br>
+      <button class="form-control btn btn-primary">Search</button>
+	  <br>
+      <div class="row">
+        <div id="display" class="col-lg-12">
+          
+        </div>
+      </div>
+	  
+	</div>
+  </div>
 </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="main.js" charset="utf-8"></script>
 </body>
 </html>
