@@ -1,15 +1,9 @@
-<<<<<<< Updated upstream
 $('button').on('click', function(){
   var city = $("input").val();
-=======
-$('.btn').on('click',function () {
-  var city = $('input').val();
->>>>>>> Stashed changes
   $.ajax({
-    url : "http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=77734ed9e6c447983b0cfbb12134387d",
+    url : "http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=place_for_token",
     dataType : "json"
   })
-<<<<<<< Updated upstream
   .done(function(res) {
     console.log(res);
     var text = '<h4>Grad: '+res.name+'</h4>';
@@ -20,9 +14,3 @@ $('.btn').on('click',function () {
     $('#display').html(text);
   })
 })
-=======
-   .done(function (res){
-     console.log(res+"yeah");
-   })
-  })
->>>>>>> Stashed changes
